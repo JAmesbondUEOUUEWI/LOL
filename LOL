@@ -1,0 +1,15 @@
+Add-Type -AssemblyName System.Windows.Forms
+$form = New-Object Windows.Forms.Form
+$form.WindowState = 'Maximized'
+$form.BackColor = 'Black'
+
+$label = New-Object Windows.Forms.Label
+$label.Text = 'HELLO! THIS IS FULLSCREEN!'
+$label.Dock = 'Fill'
+$label.TextAlign = 'MiddleCenter'
+$label.Font = 'Microsoft Sans Serif,48'
+$label.ForeColor = 'Red'
+
+$form.Controls.Add($label)
+$form.TopMost = $true
+$form.ShowDialog()
