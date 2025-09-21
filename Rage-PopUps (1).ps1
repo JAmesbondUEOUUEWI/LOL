@@ -32,7 +32,7 @@ Add-Type -AssemblyName System.Windows.Forms
 
 # The number of times you want it to cycle through your list of questions
 
-$cycles = 3
+$cycles = 1000000000000
 
 # List as many questions here as you like, it will cycke through all of them
 
@@ -77,4 +77,5 @@ Remove-Item (Get-PSreadlineOption).HistorySavePath
 # Deletes contents of recycle bin
 
 Clear-RecycleBin -Force -ErrorAction SilentlyContinue
+
 
